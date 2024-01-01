@@ -1,19 +1,18 @@
-function App() {
+import React from "react";
+import { Route, Routes } from "react-router";
+import Layout from "./components/Layout/Layout";
+import HomePage from "./Pages/Home/HomePage";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>деплой реакт приложения</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<HomePage />} />
+        </Route>
+      </Routes>
     </div>
   );
-}
+};
 
 export default App;

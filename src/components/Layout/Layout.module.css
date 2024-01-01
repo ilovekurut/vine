@@ -1,0 +1,11 @@
+header {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  gap: 100px;
+}
+
+.header a {
+  text-decoration: none;
+  /* Дополнительно, вы можете добавить другие стили для ссылок внутри header */
+}
